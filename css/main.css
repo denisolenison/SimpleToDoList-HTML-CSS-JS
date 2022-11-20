@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: 'Comfortaa', cursive;
+}
+
+#header {
+  height: auto;
+  width: 100%;
+  border: 3px solid black;
+  background-color: #d9fff5;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  box-shadow: 0px 3px 10px -4px #000000;
+}
+
+#mainTable {
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0px;
+  border-bottom: 3px solid black;
+}
+
+#userName {
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+
+#page1, #page2 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  border-radius: 2px;
+  border: 2px solid black;
+  user-select: none;
+  height: 25px;
+  border-radius: 5px;
+  width: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 9px -5px #000000;
+}
+
+#addButton {
+  font-size: 40px;
+  font-weight: 500;
+  border-radius: 25px;
+  border: 4px solid black;
+  user-select: none;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 12px -5px #000000;
+  background-color: #5fff4a;
+  margin-top: 2px;
+  margin-left: auto;
+  margin-right: 7px;
+}
+
+#page1:hover, #page2:hover {
+  cursor: pointer;
+  border: 3px solid black;
+  font-weight: 700;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+#addButton:hover {
+  cursor: pointer;
+  border: 5px solid black;
+  font-weight: 700;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  background-color: #91ff82;
+}
+
+#addButton:active {
+  cursor: pointer;
+  border: 5px solid black;
+  font-weight: 700;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  background-color: #5ccf4c;
+}
+
+
+.table {
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.td:not(:last-of-type), .th:not(:last-of-type) {
+  border-right: 2px solid black;
+}
+
+.th {
+  border-bottom: 3px solid black;
+  float: left;
+  display: block;
+}
+
+.td {
+  border-bottom: 2px solid black;
+  float: left;
+  display: block;
+}
+
+.tHead {
+  font-weight: 700;
+  background-color: #eee;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  z-index: 2;
+  box-shadow: 0px 3px 10px -4px #000000;
+}
+
+
+.tBody {
+  font-weight: 400;
+}
+
+
+.tr {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.full_tr {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.t1 {
+  width: 4%;
+  min-height: 32.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+  display: block;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.t2 {
+  width: 18%;
+  min-height: 32.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+  display: block;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.t3 {
+  width: 45%;
+  min-height: 32.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+  display: block;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.t4 {
+  width: 18%;
+  min-height: 32.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+  display: block;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.t5 {
+  width: 15%;
+  min-height: 32.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+  display: block;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+
+.progressBar {
+  height: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  width: 100%;
+  background-color: green;
+  float: left;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+
+#dateBox {
+  display: block;
+  border: 3px solid black;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  background-color: #eeeeee;
+  padding: 3px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  box-shadow: 0px -4px 10px -8px #000000;
+}
+
+#addElementForm, #editElementForm {
+  z-index: 5;
+  position: fixed;
+  left: 30%;
+  top: 30%;
+  display: none;
+  flex-direction: column;
+  width: 30%;
+  min-width: 350px;
+  height: auto;
+  background-color: #f3f3f3;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#setCompleteForm {
+  z-index: 6;
+  position: fixed;
+  left: 30%;
+  top: 30%;
+  display: none;
+  flex-direction: column;
+  width: 30%;
+  min-width: 350px;
+  height: auto;
+  background-color: #f3f3f3;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.formHeader {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e3e3e3;
+  width: 100%;
+  user-select: none;
+  border: 3px solid black;
+}
+
+.closeButton {
+  margin-left: auto;
+  margin-right: 0.5%;
+  margin-bottom: 0.3%;
+  width: 33px;
+  height: 33px;
+  background-color: #dd0505;
+  font-size: 25px;
+  font-weight: 700;
+  border: 3px solid black;
+}
+
+.closeButton:hover {
+  background-color: #cc0303;
+}
+
+.closeButton:active {
+  background-color: #ee2121;
+}
+
+textarea {
+  resize: vertical;
+  border: 2px solid black;
+  border-radius: 5px;
+  min-height: 30px;
+  max-height: 120px;
+}
+
+#theFormCreate, #theFormUpdate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+  padding: 3px;
+}
+
+
+.error {
+  color: red;
+  display: none;
+}
+
+#createTask, #updateTask, .editButton, .deleteButton {
+  font-weight: 700;
+  font-family: 'Comfortaa', cursive;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.upButton, .downButton, .compButton, .deleteButton {
+  width: 20px;
+  height: 20px;
+}

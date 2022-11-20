@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Simple ToDo List</title>
+      <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body id="body">
+      <div id="header">
+        <p id="userName">Привет, UserName<p>
+        <div id="page1">Текущие</div>
+        <div id="page2">Завершенные</div>
+        <div id="addButton" title="Добавить новое задание" onclick="openAddForm()">+</div>
+      </div>
+      <div id="mainTable"></div>
+      <div id="addElementForm">
+        <div class="formHeader">
+          <b>Добавить новое задание</b>
+          <button class="closeButton" onclick="closeForm()">X</button>
+        </div>
+        <form action="" method="" id="theFormCreate">
+          <p style="height:5px"></p>
+          <label for="taskTextMake">Введите название задания:</label>
+          <p style="height:5px"></p>
+          <textarea name="taskText" id="taskTextMake"
+          placeholder="Введите текст самого задания"
+          maxlength="1000" required cols="41"></textarea>
+          <p style="height:5px"></p>
+          <label for="taskDateStartMake">Дата и время начала:</label>
+          <p style="height:5px"></p>
+          <input type="date" name="taskDateStart" id="taskDateStartMake" required>
+          <input type="time" name="taskTimeStart" id="taskTimeStartMake" required>
+          <p style="height:5px"></p>
+          <label for="taskDateEndMake">Дата и время дедлайна:</label>
+          <p style="height:5px"></p>
+          <input type="date" name="taskDateEnd" id="taskDateEndMake" required>
+          <input type="time" name="taskTimeEnd" id="taskTimeEndMake" required>
+          <p style="height:5px"></p>
+          <b class="error" id="errorMake">Error</b>
+          <p style="height:5px"></p>
+          <button type="button" id="createTask" onclick="submitTask()">Создать задание</button>
+          <p style="height:5px"></p>
+        </form>
+      </div>
+      <div id="setCompleteForm">
+        <div class="formHeader">
+          <b id="compTaskId">Установите дату выполнения задания</b>
+          <button class="closeButton" onclick="closeForm2()">X</button>
+        </div>
+        <form action="" method="" id="theFormComplete">
+          <p style="height:5px"></p>
+          <label for="taskDateStartMake">Дата и время выполнения:</label>
+          <p style="height:5px"></p>
+          <input type="date" name="taskDateComp" id="taskDateCompMake" required>
+          <input type="time" name="taskTimeComp" id="taskTimeCompMake" required>
+          <p style="height:5px"></p>
+          <b class="error" id="errorMake2">Error</b>
+          <p style="height:5px"></p>
+          <button type="button" id="createTask" onclick="completeTask()">Задание выполнено!</button>
+          <p style="height:5px"></p>
+        </form>
+      </div>
+      <div id="editElementForm">
+        <div class="formHeader">
+          <b>Изменить задание №</b>
+          <button class="closeButton" onclick="closeForm3()">X</button>
+        </div>
+        <form action="" method="" id="theFormUpdate">
+          <p style="height:5px"></p>
+          <label for="taskTextUpdate">Введите название задания:</label>
+          <p style="height:5px"></p>
+          <textarea name="taskText" id="taskTextUpdate"
+          placeholder="Введите текст самого задания"
+          maxlength="1000" required cols="41"></textarea>
+          <p style="height:5px"></p>
+          <label for="taskDateStartUpdate">Дата и время начала:</label>
+          <p style="height:5px"></p>
+          <input type="date" name="taskDateStart" id="taskDateStartUpdate" required>
+          <input type="time" name="taskTimeStart" id="taskTimeStartUpdate" required>
+          <p style="height:5px"></p>
+          <label for="taskDateEndUpdate" id="labelUpdateEnd">Дата и время дедлайна:</label>
+          <p style="height:5px"></p>
+          <input type="date" name="taskDateEnd" id="taskDateEndUpdate" required>
+          <input type="time" name="taskTimeEnd" id="taskTimeEndUpdate" required>
+          <p style="height:5px"></p>
+          <b class="error" id="errorUpdate">Error</b>
+          <p style="height:5px"></p>
+          <button type="button" id="updateTask" onclick="updateTaskF()">Изменить задание</button>
+          <p style="height:5px"></p>
+        </form>
+      </div>
+      <script src="js/task.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/sorting.js"></script>
+    </body>
+</html>
